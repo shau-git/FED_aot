@@ -69,7 +69,7 @@ const Blood = ({paths, drips}, ref) => {
     return (
       <canvas 
 	  	ref={canvasRef} 
-		className="absolute inset-0 z-50 pointer-events-none" 
+		className="absolute inset-0 z-100 pointer-events-none" 
 		
 	/>
     )

@@ -145,22 +145,14 @@ const GetStarted = ({setCurrentPage}) => {
 
 /*
 bg-black/70  border border-white/25 
-
-style={{
-				cursor: slice 
-				? isDragging.current 
-					? `url('./src/assets/images/icons/knife.cur') 12 12,  auto` 
-					: ` url('./src/assets/images/icons/knife.png') 12 12, pointer`
-				: "url('./src/assets/images/cursor/Eren__cursor.png') 16 16, auto"
-			}}
-					
+				
 */
 	const characterImages = data[activeIndex]["img"]
 	//onTouchStart , onTouchMove, onTouchEnd   onMouseDown, onMouseMove, onMouseUp
 	return (
 		<div
 			className={`relative inset-0 bg-[url(./src/assets/images/wallpapers/GetStarted.jpg)] 
-				min-h-screen bg-no-repeat bg-center bg-cover  flex items-center justify-center w-full  ${slice ? 'overflow-hidden fixed inset-0' : 'overflow-y-scroll'}
+				min-h-screen bg-no-repeat bg-center bg-cover  flex items-center justify-center w-full  ${slice ? 'overflow-hidden fixed inset-0 select-none' : 'overflow-y-scroll'}
 			`}
 			style={{
 				cursor: isCursorActive
@@ -181,17 +173,13 @@ style={{
 			{/* audio tag for the lightning */}
 			<audio ref={transformSoundRef} src="./src/assets/audio/GetStarted/transformation_snk.mp3" preload="auto" />
 
-			
-
 			{/* Persistent Canvas for Scratches and Drips */}
 			<Blood {...{paths, drips }}/>
 
 			{/*Thunder animation */}
 			{transforming && (<Thunder />)}
 
-
 			{/*Content */}
-			
 			<motion.div
 				className={`
 					mx-auto  max-w-6xl rounded-3xl  
