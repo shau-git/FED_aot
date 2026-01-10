@@ -42,7 +42,7 @@ function App() {
         if (currentSongIndex === null) return; // Exit if no song is selected
         const audio = audioRef.current;
         audio.pause();
-        audio.src = `./src/assets/audio/songs/${currentSong.file_name}`;
+        audio.src = `/assets/audio/songs/${currentSong.file_name}`;
         audio.load();
         
         if (isPlaying) {

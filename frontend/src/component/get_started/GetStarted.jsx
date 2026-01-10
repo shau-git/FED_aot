@@ -5,7 +5,7 @@ import {data, Blood, Thunder, Audio, SelectImage, Introduction, Button} from "./
 import {useIsMobile} from "../home/homeConfig"
 import { RiKnifeLine } from "react-icons/ri";
 
-//flex justify-center items-center  //max-h-[90vh]    src="./src/assets/images/images/Eren_1.png"
+//flex justify-center items-center  //max-h-[90vh]    src="/assets/images/images/Eren_1.png"
 
 const GetStarted = ({setCurrentPage}) => {
 

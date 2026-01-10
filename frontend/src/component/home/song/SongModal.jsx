@@ -74,7 +74,7 @@ const SongModal = ({closeSongModal, openSongModal, isPlaying, setIsPlaying, curr
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            style={{ cursor: "url('/assets/images/cursor/Mikasa__cursor.png'), auto" }}
+            style={{ cursor: "url('/assets/images/cursor/Mikasa_cursor.png'), auto" }}
         >
             <motion.div
                 className={`

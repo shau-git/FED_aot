@@ -207,7 +207,7 @@ const CurrentInheritors = ({titans}) => {
 
     // change the titan form image
     if(id === 89 || titans[2]) {
-        titanFormImg = `./src/assets/images/titans/profile/${titansImgCard[id]}`
+        titanFormImg = `/assets/images/titans/profile/${titansImgCard[id]}`
     } 
 
     return (
@@ -235,7 +235,7 @@ const FormerInheritors = ({titans}) => {
                 let {id, img, name} = titan
 
                 img = fixImage(img)
-                let titanFormImg = `./src/assets/images/titans/profile/${titansImgCard[id]}`
+                let titanFormImg = `/assets/images/titans/profile/${titansImgCard[id]}`
 
                 if([1, 91,118].includes(id)) {
                     titanFormImg = fixImage(titanUrlImg)

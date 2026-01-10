@@ -11,7 +11,7 @@ const OpenModal = ({p}) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    style={{ cursor: "url('./src/assets/images/cursor/Hange__cursor.png'), auto" }}
+                    style={{ cursor: "url('/assets/images/cursor/Hange_cursor.png'), auto" }}
                 >
                     <motion.div
                         layout // Add layout prop to help Framer Motion track the box

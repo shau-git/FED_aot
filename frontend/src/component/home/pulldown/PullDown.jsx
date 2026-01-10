@@ -28,7 +28,7 @@ const PullDown = ({setCurrentPage}) => {
         return () => window.removeEventListener("click", handleClick);
     }, [mode]);
 
-    //<img src="./src/assets/images/icons/AOTLogo.png" className="w-60"/>
+    //<img src="/assets/images/icons/AOTLogo.png" className="w-60"/>
     return (
         <AnimatePresence>
         {/* 🔽 ARROW */}
