@@ -1,9 +1,9 @@
 const data = [
     {
         "img": [
-            "Eren_1.png",
-            "Eren_2.png",
-            "Eren_3.png",
+            "eren_one.png",
+            "eren_two.png",
+            "eren_three.png",
         ],
         "quote": `
             On the side of the wall.. there is a sea.
