@@ -72,7 +72,7 @@ const heroImages = {
         "s3/29_.avif",
         "s3/30_.jpg",
         "s3/31_.jpg",
-        "s3/32_.avif",
+        "s3/32_s3.avif",
         "s3/33_.jpeg",
         "s3/34_.jpeg",
         "s3/35_.jpeg",
@@ -89,7 +89,7 @@ const heroImages = {
         "s3/46_.jpg",
         "s3/47_.jpg",
         "s3/48_.jpg",
-        "s3/49_.jpg",
+        "s3/49_s3.jpg",
         "s3/50_.jpg",
         "wallpapers/ToBeContinued.png",
     ],
@@ -116,7 +116,7 @@ const heroImages = {
         "s4/18_.jpeg",
         "s4/19_.jpeg",
         "s4/20_.jpeg",
-        "s4/21_.jpeg",
+        "s4/21_s4.jpeg",
         "s4/22_.jpeg",
         "s4/23_.jpeg",
         "s4/24_.jpeg",
@@ -200,7 +200,6 @@ const heroImages = {
         "s4/99_.jpeg",
         "s4/100_.jpeg",
         "s4/101_.jpeg",
-
         "wallpapers/ToBeContinued.png",
     ],
     "The Final Season": [
@@ -214,7 +213,6 @@ const heroImages = {
         "special/8_.jpg",
         "special/9_.jpg",
         "special/10_.jpg",
-
         "special/11_.jpg",
         "special/12_.jpg",
         "special/13_.jpg",
@@ -235,13 +233,12 @@ const heroImages = {
         "special/28_.jpg",
         "special/29_.jpg",
         "special/30_.jpg",
-
         "special/31_.jpg",
         "special/32_.jpg",
         "special/33_.jpg",
         "special/34_.jpg",
         "special/35_.jpg",
-        "special/36_.jpg",
+        "special/36_final.jpg",
         "special/37_.jpg",
         "special/38_.jpg",
         "special/39_.jpg",
@@ -250,8 +247,8 @@ const heroImages = {
         "special/42_.jpg",
         "special/43_.jpg",
         "special/44_.jpg",
-        "special/45_.jpg",
-        "special/46_.jpg",
+        "special/45_final.jpg",
+        "special/46_final.jpg",
         "special/48_.jpg",
         "special/49_.jpg",
         "special/50_.jpg",
@@ -272,16 +269,18 @@ const heroImages = {
         "special/64_.jpg",
         "special/65_.jpg",
         "special/66_.jpg",
-        "special/67_.png",
-        "special/68_.jpg",
+        "special/67_final.png",
+        "special/68_final.jpg",
         "special/69_.jpg",
-        "special/70_.png",
+        "special/70_final.png",
         "wallpapers/TheEnd.jpg",
     ],
     "More": [
         "wallpapers/rumbling.jpg",
         "wallpapers/All.jpg",
-        "wallpapers/Eren_Zeke.jpeg"
+        "wallpapers/Eren_Zeke.jpeg",
+        "wallpapers/Warriors.jpeg",
+        "wallpapers/ErenMiskasa.jpeg"
     ]
 }
 

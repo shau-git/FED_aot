@@ -61,7 +61,7 @@ const Hero = ({showAlert}) => {
                         direction, 
                         imageUrl: "./src/assets/images/hero/", 
                         imageName: heroImages[currentSeason][imageIndex],
-                        bgPosition: heroImages[currentSeason][imageIndex].split('/')[1] === "ToBeContinued.png" ? 'center bottom' : 'center',
+                        bgPosition: ["49_s3.jpg","32_s3.avif","21_s4.jpeg", "ToBeContinued.png","36_final.jpg","45_final.jpg","46_final.jpg", "67_final.jpg", "68_final.jpg", "70_final.png"].includes(heroImages[currentSeason][imageIndex].split('/')[1]) ? 'center bottom' : 'center',
                         handleAction: closeVisible,
                         usage: 'hero'
                         }} />

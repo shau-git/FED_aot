@@ -1,16 +1,9 @@
-# React + Vite
+# FED_AOT
+This Project provides characters, episodes, locations, Organizations & titans information from a popular manga __Attack On Titan__ , written by Hajime Isayama.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Design Process
+My intention for the design of this app was to make it look cinematic and like anime style. To achieve this, I searched the design ideas from [Netflix](https://www.netflix.com/sg/title/70299043) for the Hero section. The titan display part i searched design from [Naruto website](https://naruto-official.com/en/special/naruto-storm-series), for the Song page i adapt the design from __Spotify__.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Figma [link](https://www.figma.com/design/u43Fv081mEVCyoJITjiCr6/aot?node-id=0-1&p=f&t=pBKx4FdBppplQRrW-0) to view my design prototype.
