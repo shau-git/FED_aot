@@ -15,18 +15,6 @@ const CardButtons = ({
     // for hightligting the card button font so that user know which section they are browsing (charcaters, episode, location etc)
     const [active , setActive] = useState("characters")
     
-    // const handleClick = (key) => {
-    //     // Check if clicking the same button
-    //     if (active === key) {
-    //         // Scroll to top if same button clicked
-    //         scrollToTop()
-    //     } else {
-    //         // Switch to different resource
-    //         clearQuery()
-    //         handleResourceClick(key)
-    //         setActive(key)
-    //     }
-    // }
 
     const handleClick = (key) => {
         // Check if clicking the same button
@@ -65,7 +53,8 @@ const CardButtons = ({
                             >
                                 {key}
                             </p>
-                            {key.toLowerCase() !== "organizations" && <span className="absolute right-0 top-0 bottom-0 w-px bg-gray-800"></span>}
+                            {/* {key.toLowerCase() !== "organizations" && <span className="absolute right-0 top-0 bottom-0 w-px bg-gray-800"></span>} */}
+                            <span className="absolute right-0 top-0 bottom-0 w-px bg-gray-800"></span>
                         </motion.div>
                     )
                 }

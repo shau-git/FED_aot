@@ -1,6 +1,6 @@
 import {useState} from "react"
 
-const endPoint = "api/likes/"
+const endPoint = "https://fed-aot-backend.onrender.com/api/likes/"
 
 const getLikes = async (token) => {
     try {
