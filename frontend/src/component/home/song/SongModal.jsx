@@ -68,13 +68,13 @@ const SongModal = ({closeSongModal, openSongModal, isPlaying, setIsPlaying, curr
 
     return (
         <motion.div
-            className={`${openSongModal?"z-100": "-z-100"} fixed inset-0 bg-[url(./src/assets/images/wallpapers/Song.jpg)]  md:overflow-x-hidden
+            className={`${openSongModal?"z-100": "-z-100"} fixed inset-0 bg-[url(/assets/images/wallpapers/Song.jpg)]  md:overflow-x-hidden
             min-h-screen bg-no-repeat bg-center bg-cover overflow-hidden flex items-center justify-center w-full
             `}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            style={{ cursor: "url('./src/assets/images/cursor/Mikasa__cursor.png'), auto" }}
+            style={{ cursor: "url('/assets/images/cursor/Mikasa__cursor.png'), auto" }}
         >
             <motion.div
                 className={`
@@ -149,7 +149,7 @@ const SongModal = ({closeSongModal, openSongModal, isPlaying, setIsPlaying, curr
                                             {renderIcon(i)}   
                                         </span>
                                         <img 
-                                            src={`./src/assets/images/songs/${thumbnail}`}
+                                            src={`/assets/images/songs/${thumbnail}`}
                                             className="w-11 h-11 rounded shadow-lg object-cover"
                                             />
                                         <div className="flex-1">
@@ -176,7 +176,7 @@ const SongModal = ({closeSongModal, openSongModal, isPlaying, setIsPlaying, curr
                     {/* Currently Playing Info */}
                     
                     <div className={`flex items-center gap-4 ${isMobile?"w-2/3" :"w-1/3"} overflow-hidden`}>
-                        <img src={`./src/assets/images/songs/${currentSong.thumbnail}`} className="w-14 h-14 rounded shadow-lg object-cover" alt="Cover" />
+                        <img src={`/assets/images/songs/${currentSong.thumbnail}`} className="w-14 h-14 rounded shadow-lg object-cover" alt="Cover" />
                         <div className=''>
                             {hoverFooter &&
                                 <div className="text-[16px] text-white absolute -top-2 bg-gray-700 rounded-md p-1 flex items-center justify-center">

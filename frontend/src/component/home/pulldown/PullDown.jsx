@@ -74,7 +74,7 @@ const PullDown = ({setCurrentPage}) => {
             >
             <motion.img
                 id="aot-logo"
-                src="./src/assets/images/icons/AOTLogo.png"
+                src="/assets/images/icons/AOTLogo.png"
                 alt="Return"
                 onClick={() => setCurrentPage("GetStarted")}
                 whileHover={{ scale: 1.05 }}

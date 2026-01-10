@@ -35,7 +35,7 @@ const FloatingBubble = () => {
 		>
 			{/* Your icon or image here */}
 			<img 
-			src="./src/assets/images/icons/wingOfFreedom.png" 
+			src="/assets/images/icons/wingOfFreedom.png" 
 			className="w-[30px] h-10 pointer-events-none" 
 			alt="icon" 
 			/>

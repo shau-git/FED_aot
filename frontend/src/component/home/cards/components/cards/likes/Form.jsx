@@ -88,7 +88,7 @@ const Form = ({setToken}) => {
             <div 
                 className="w-full max-w-md rounded-2xl  p-8 relative overflow-hidden shadow-[0_0_50px_-10px_rgba(253,224,71,0.5)]"
                 style={{
-                backgroundImage: 'url(./src/assets/images/form/form.jpg)',
+                backgroundImage: 'url(/assets/images/form/form.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
                 }}

@@ -17,7 +17,7 @@ const CoverImage = ({coverImage, coverImageDir, isMobile, focus}) => {
                 <motion.div 
                     className="absolute inset-0 bg-cover bg-center brightness-100" 
                     style={{ 
-                        backgroundImage: `url(./src/assets/images/titans/${coverImage})`,
+                        backgroundImage: `url(/assets/images/titans/${coverImage})`,
                         backgroundPosition: "center", 
                     }}
                     animate={{ scale: (focus && !isMobile) ? 1.2 : 1 }}
@@ -49,7 +49,7 @@ const FieldButton = ({changeDisplay, activeTab}) => {
                             `}
                             onClick={() => changeDisplay(e)}
                             >
-                            {activeTab === e &&<img src="./src/assets/images/titans/syringe.png" className="w-7 h-7 absolute -top-2 left-0"/>}
+                            {activeTab === e &&<img src="/assets/images/titans/syringe.png" className="w-7 h-7 absolute -top-2 left-0"/>}
                             {e}
                         </div>
                     )
