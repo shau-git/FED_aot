@@ -5,13 +5,13 @@ This aot web page provides a comprehensive information about the popular manga _
 Each section offers search by name, with episodes featuring a season dropdown filter. For extra fun, the Get Started page lets fans "slice to transform". The Hero section features images of some iconic scenes from the anime. Hope you enjoy using the app!
 
 
-My project link [FED_aot](https://shau-git.github.io/PF_NarutoDB/)
+`My project link` [FED_aot](https://shau-git.github.io/PF_NarutoDB/)
 
 
 ## Design Process
 My intention for this app’s design was to make it look cinematic and anime‑styled. To achieve this, I drew inspiration for the hero section from [Netflix](https://www.netflix.com/sg/title/70299043). For the titan display section, I referenced design ideas from the [Naruto website](https://naruto-official.com/en/special/naruto-storm-series), and for the song part, I adapted concepts from [Spotify](https://open.spotify.com/).
 
-You can view my design prototype in this Figma [link](https://www.figma.com/design/u43Fv081mEVCyoJITjiCr6/aot?node-id=0-1&t=oo6A1yfX2TP5tjV0-1).
+You can view my design prototype in this `Figma` [link](https://www.figma.com/design/u43Fv081mEVCyoJITjiCr6/aot?node-id=0-1&t=oo6A1yfX2TP5tjV0-1).
 
 
 ## Features
