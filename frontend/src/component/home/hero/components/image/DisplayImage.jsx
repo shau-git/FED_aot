@@ -36,7 +36,7 @@ const DisplayImage = ({p}) => {
                     className={`${usage==="hero" ? "bg-cover ": "bg-contain "} absolute inset-0 overflow-hidden`}
                     style={{ 
                         backgroundImage: `url(${imageUrl}${imageName})`,
-                        backgroundPosition: bgPosition,
+                        backgroundPosition: "center center",//bgPosition,
                         backgroundRepeat: 'no-repeat' 
                     }}
                     >

@@ -1,6 +1,6 @@
 import {useState, memo} from 'react'
 import { IoIosArrowForward , IoIosArrowBack } from "react-icons/io";
-import {Arrow, RandomQuote, heroImages, MoreButton, ProgressBar, DisplayImage} from "../homeConfig"
+import {Arrow, RandomQuote, heroImages, MoreButton, ProgressBar, DisplayImage, useIsMobile} from "../homeConfig"
 
 const Hero = ({showAlert}) => {
     const [imageIndex, setImageIndex] = useState(0)
@@ -41,9 +41,11 @@ const Hero = ({showAlert}) => {
         setImageIndex(0)
         setCurrentSeason(season)
     }
+
+    const isMobile  = useIsMobile()
     
     return (
-        <main className="relative" style={{ cursor: "url('./src/assets/images/cursor/Armin__cursor.png'), auto" }}>
+        <main className="relative mb-20 md:mb-40 min-h-[500px] md:h-auto" style={{ cursor: "url('./src/assets/images/cursor/Armin__cursor.png'), auto" }} onClick={() => closeVisible()}>
 
             {/* section for user to change the season of the bg image*/}
             <MoreButton currentSeason={currentSeason} handleDisplay={handleDisplay} showAlert={showAlert} toggleVisible={toggleVisible} visible={visible}/>
@@ -53,7 +55,7 @@ const Hero = ({showAlert}) => {
             <ProgressBar images={heroImages[currentSeason]} imageIndex={imageIndex}/>
 
             {/*section to diplay the hero image min-h-[800px]*/}
-            <section className="relative h-[calc(100vh-55px)] w-full flex items-end mb-20">
+            <section className="relative h-[40vh] md:h-[calc(100vh-55px)] w-full flex items-end mb-20">
                 <div className="absolute inset-0">
 
                     <DisplayImage p={{
@@ -61,7 +63,7 @@ const Hero = ({showAlert}) => {
                         direction, 
                         imageUrl: "./src/assets/images/hero/", 
                         imageName: heroImages[currentSeason][imageIndex],
-                        bgPosition: ["49_s3.jpg","32_s3.avif","21_s4.jpeg", "ToBeContinued.png","36_final.jpg","45_final.jpg","46_final.jpg", "67_final.jpg", "68_final.jpg", "70_final.png"].includes(heroImages[currentSeason][imageIndex].split('/')[1]) ? 'center bottom' : 'center',
+                        bgPosition: isMobile && ["49_s3.jpg","32_s3.avif","21_s4.jpeg", "ToBeContinued.png","36_final.jpg","45_final.jpg","46_final.jpg", "67_final.jpg", "68_final.jpg", "70_final.png"].includes(heroImages[currentSeason][imageIndex].split('/')[1]) ? 'center bottom' : 'center',
                         handleAction: closeVisible,
                         usage: 'hero'
                         }} />

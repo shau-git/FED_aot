@@ -104,7 +104,7 @@ const Cards = ({openModal}) => {
 
 
     return (
-        <main className="font-netflix relative mt-40" style={{ cursor: "url('./src/assets/images/cursor/Levi__cursor.png'), auto" }}>  
+        <main className="font-netflix relative" style={{ cursor: "url('./src/assets/images/cursor/Levi__cursor.png'), auto" }}>  
             {/* Titans Card */}
             <Titans {...{ dataMap, loading, error, openModal }}/>
            
