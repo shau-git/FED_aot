@@ -21,9 +21,9 @@ const data = [
 
     },{
         "img": [
-            "Eren_4.png",
-            "Eren_5.png",
-            "Eren_6.png",
+            "eren_4.png",
+            "eren_5.png",
+            "eren_6.png",
         ],
         "quote": `
             True, I saw everyone on the other side of the sea as my enemy.
