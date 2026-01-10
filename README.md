@@ -9,6 +9,7 @@ Each section offers search by name, with episodes featuring a season dropdown fi
 - https://fed-aot.vercel.app/
 - https://fed-aot.onrender.com/
 
+`Vercel Respository`(https://fed-aot.vercel.app/)
 
 ## Design Process
 My intention for this app’s design was to make it look cinematic and anime‑styled. To achieve this, I drew inspiration for the hero section from [Netflix](https://www.netflix.com/sg/title/70299043). For the titan display section, I referenced design ideas from the [Naruto website](https://naruto-official.com/en/special/naruto-storm-series), and for the song part, I adapted concepts from [Spotify](https://open.spotify.com/).
