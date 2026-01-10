@@ -153,8 +153,8 @@ const GetStarted = ({setCurrentPage}) => {
 			`}
 			style={{
 				cursor: isCursorActive
-					? `url(${new URL('./assets/images/cursor/Sword_cursor2.png', import.meta.url).href}), crosshair`
-					: `url(${new URL('./assets/images/cursor/Eren__cursor.png', import.meta.url).href}), auto`
+					? `url(${new URL('./assets/images/cursor/sword_cursor.png', import.meta.url).href}), crosshair`
+					: `url(${new URL('./assets/images/cursor/eren__cursor.png', import.meta.url).href}), auto`
 			}}
 			ref={containerRef }
 			onTouchStart={handlePointerDown}
