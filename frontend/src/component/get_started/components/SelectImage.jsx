@@ -12,7 +12,7 @@ const SelectImage = ({characterImages,imageIndex,setImageIndex}) => {
                         imageIndex === i ? 'bg-neutral-600 ' : "hover:bg-neutral-800"}`}
                     >
                         <img 
-                            src={`./src/assets/images/Eren/${img}`}
+                            src={`/assets/images/eren/${img}`}
                             alt="selection"
                             className="w-full h-full object-contain"
                         />
