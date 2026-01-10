@@ -54,10 +54,8 @@ function App() {
     useEffect(() => {
         const audio = audioRef.current;
 
-        //const updateTime = () => setCurrentTime(audio.currentTime);
         const updateDuration = () => setDuration(audio.duration);
 
-        //audio.addEventListener('timeupdate', updateTime);
         audio.addEventListener('loadedmetadata', updateDuration);
 
         // If the song ends, move to the next one 
@@ -74,9 +72,6 @@ function App() {
         audio.addEventListener('ended', handleNextSong);
 
         return () => {
-            //audio.pause();
-            //audio.src = ""; // This completely kills the current audio stream
-            //audio.removeEventListener('timeupdate', updateTime);
             audio.removeEventListener('loadedmetadata', updateDuration);
             audio.removeEventListener('ended', handleNextSong);
         };

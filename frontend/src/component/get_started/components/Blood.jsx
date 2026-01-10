@@ -64,8 +64,6 @@ const Blood = ({paths, drips}, ref) => {
 	}, []);
 
 	
-
-
     return (
       <canvas 
 	  	ref={canvasRef} 

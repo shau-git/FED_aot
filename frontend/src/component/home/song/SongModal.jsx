@@ -20,14 +20,6 @@ const SongModal = ({closeSongModal, openSongModal, isPlaying, setIsPlaying, curr
         return () => audio.removeEventListener('timeupdate', syncTime);
     }, [audioRef]);
 
-    // const [isPlaying, setIsPlaying] = useState(false);
-    // const [currentSongIndex, setCurrentSongIndex] = useState(null);
-    // const [currentTime, setCurrentTime] = useState(0);
-    // const [duration, setDuration] = useState(0);
-    // const [volume, setVolume] = useState(0.2); // Starts at 50% volume
-
-    // const audioRef = useRef(new Audio()); // Creates the audio object
-    // const currentSong = currentSongIndex !== null ? songData[currentSongIndex] : null;
 
     const isMobile = useIsMobile()
     
@@ -53,73 +45,13 @@ const SongModal = ({closeSongModal, openSongModal, isPlaying, setIsPlaying, curr
         setIsPlaying(!isPlaying);
     };
 
-    // Update audio source only when a valid index is selected
-    // useEffect(() => {
-    //     if (currentSongIndex === null) return; // Exit if no song is selected
-
-    //     const audio = audioRef.current;
-    //     audio.pause();
-    //     audio.src = `./src/assets/audio/${currentSong.file_name}`;
-    //     audio.load();
-        
-    //     if (isPlaying) {
-    //         audio.play().catch(error => console.log("Playback failed:", error));
-    //     }
-    // }, [currentSongIndex]);
-
-
-
-
-
-    // To sync the progress bar (input range) with current playing song
-    // useEffect(() => {
-    //     const audio = audioRef.current;
-
-    //     const updateTime = () => setCurrentTime(audio.currentTime);
-    //     const updateDuration = () => setDuration(audio.duration);
-
-    //     audio.addEventListener('timeupdate', updateTime);
-    //     audio.addEventListener('loadedmetadata', updateDuration);
-
-    //     // If the song ends, move to the next one 
-    //     const handleNextSong = () => {
-    //         setCurrentSongIndex((prevIndex) => {
-    //             // If it's the last song, return 0 to loop back to the first
-    //             if (prevIndex === songData.length - 1) {
-    //                 return 0;
-    //             }
-    //             // Otherwise, move to the next index
-    //             return prevIndex + 1;
-    //         });
-    //     };
-    //     audio.addEventListener('ended', handleNextSong);
-
-    //     return () => {
-    //         audio.pause();
-    //         audio.src = ""; // This completely kills the current audio stream
-    //         audio.removeEventListener('timeupdate', updateTime);
-    //         audio.removeEventListener('loadedmetadata', updateDuration);
-    //         audio.removeEventListener('ended', handleNextSong);
-    //     };
-    // }, []);
-
-
     /*Function that updates the audio.currentTime based on the slider's value 
     to let the user skip to a specific part of the song by dragging the slider 
     */
     const handleProgressChange = (e) => {
-        // const newTime = Number(e.target.value);
         const val = Number(e.target.value);
         setLocalTime(val); // Update local UI
         audioRef.current.currentTime = val; // Update actual music
-
-        // // 1. Update the UI state immediately for visual smoothness
-        // setCurrentTime(newTime);
-        
-        // // 2. Update the actual audio object
-        // if (audioRef.current) {
-        //     audioRef.current.currentTime = newTime;
-        // }
     };
 
     // Helper function to format seconds into MM:SS
