@@ -148,7 +148,7 @@ const GetStarted = ({setCurrentPage}) => {
 
 	return (
 		<div
-			className={`overflow-x-hidden relative inset-0 bg-[url(./src/assets/images/wallpapers/GetStarted.jpg)] 
+			className={`overflow-x-hidden relative inset-0 bg-[url(/assets/images/wallpapers/GetStarted.jpg)] 
 				min-h-screen bg-no-repeat bg-center bg-cover  flex items-center justify-center w-full  ${slice ? 'overflow-hidden fixed inset-0 select-none' : 'overflow-y-scroll'}
 			`}
 			style={{
