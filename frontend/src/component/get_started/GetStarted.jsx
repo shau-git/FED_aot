@@ -168,7 +168,7 @@ const GetStarted = ({setCurrentPage}) => {
 			<div className="fixed inset-0 bg-black/70"/>
 
 			{/* audio tag for the lightning */}
-			<audio ref={transformSoundRef} src="./src/assets/audio/GetStarted/transformation_snk.mp3" preload="auto" />
+			<audio ref={transformSoundRef} src="/assets/audio/GetStarted/transformation_snk.mp3" preload="auto" />
 
 			{/* Persistent Canvas for Scratches and Drips */}
 			<Blood {...{paths, drips }}/>
@@ -207,7 +207,7 @@ const GetStarted = ({setCurrentPage}) => {
 						<AnimatePresence mode="wait">
 							<motion.img
 								key={imageIndex}
-								src={`./src/assets/images/Eren/${characterImages[imageIndex]}`}
+								src={`/assets/images/Eren/${characterImages[imageIndex]}`}
 								className="h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)]"
 								initial={{ opacity: 0, scale: 0.9 }}
 								animate={{ opacity: 1, scale: 1 }}
