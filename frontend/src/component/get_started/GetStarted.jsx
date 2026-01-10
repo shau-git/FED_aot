@@ -207,7 +207,7 @@ const GetStarted = ({setCurrentPage}) => {
 						<AnimatePresence mode="wait">
 							<motion.img
 								key={imageIndex}
-								src={`/assets/images/Eren/${characterImages[imageIndex]}`}
+								src={`/assets/images/eren/${characterImages[imageIndex]}`}
 								className="h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)]"
 								initial={{ opacity: 0, scale: 0.9 }}
 								animate={{ opacity: 1, scale: 1 }}
