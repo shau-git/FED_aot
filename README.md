@@ -5,7 +5,9 @@ This aot web page provides a comprehensive information about the popular manga _
 Each section offers search by name, with episodes featuring a season dropdown filter. For extra fun, the Get Started page lets fans "slice to transform". The Hero section features images of some iconic scenes from the anime. Hope you enjoy using the app!
 
 
-`My project link` [FED_aot](https://shau-git.github.io/PF_NarutoDB/)
+- `My project link` , both are the same.
+- https://fed-aot.vercel.app/
+- https://fed-aot.onrender.com/
 
 
 ## Design Process
@@ -16,6 +18,7 @@ You can view my design prototype in this `Figma` [link](https://www.figma.com/de
 
 ## Features
 In this section will dive dip in all the details of each sections in this app.
+__Note__: when first load the page the audio and images will took some time to load, need to be patient.
 
 ### Get Started
 This is the first section you'll see when visiting the app.
