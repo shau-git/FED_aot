@@ -9,7 +9,6 @@ const Form = ({setToken}) => {
     const [passwordError, setPasswordError] = useState(null);
     const [error, setError] = useState('');
     const [hasAccount, setHasAccount] = useState(true)
-
     const endpoint = hasAccount ? "https://fed-aot-backend.onrender.com/api/user/login" : "https://fed-aot-backend.onrender.com/api/user/"
 
     const validateEmail = () => {
