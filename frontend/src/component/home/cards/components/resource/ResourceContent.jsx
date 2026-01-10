@@ -37,6 +37,9 @@ const ResourceContent = ({
             })
             setLikedData(likedCard)
             setLiked(likedObj)
+        } else if (likeAPI && likeAPI.total === 0) {
+            setLikedData(null)
+            setLiked({})
         }
     }
 

@@ -1,8 +1,12 @@
 import {motion} from "framer-motion"
+import {useState} from "react"
 import {ReadMoreButton, fixImage, getStatusColor, addLike, deleteLike} from "../../../homeConfig"
 
 const Characters = ({data, handleClick, token, setLikeAPI, liked}) => {
     let {id, name, img, age, residence, occupation, status} = data
+
+    // Add local state for optimistic UI
+    const [isLikedOptimistic, setIsLikedOptimistic] = useState(!!liked[id])
 
     // to set the jaeger brothers to Deceased
     const nameParts = name.split(' ');
@@ -12,16 +16,24 @@ const Characters = ({data, handleClick, token, setLikeAPI, liked}) => {
 
     const colors = getStatusColor(status)
 
-   
-
     const handleClickLike = async() => {
-        let latest; 
-        if(liked[id]) {
-            latest = await deleteLike(id, token)
-        } else {
-            latest = await addLike(id, token)
+        // 1. Update UI immediately (optimistic update)
+        setIsLikedOptimistic(!isLikedOptimistic)
+        
+        // 2. Then make the API call in the background
+        try {
+            let latest; 
+            if(liked[id]) {
+                latest = await deleteLike(id, token)
+            } else {
+                latest = await addLike(id, token)
+            }
+            setLikeAPI({total: latest.total, results: latest.results})
+        } catch (error) {
+            // 3. If API fails, revert the optimistic update
+            console.error("Like API failed:", error)
+            setIsLikedOptimistic(!!liked[id]) // Revert to original state
         }
-        setLikeAPI({total: latest.total, results: latest.results})
     }
  
     return (
@@ -87,8 +99,10 @@ const Characters = ({data, handleClick, token, setLikeAPI, liked}) => {
                 </div>
             </div>
 
-            {/*Like Button   activateLike   true*/} 
+            {/*footer*/} 
             <div className={`${token && "flex items-center justify-between pl-2"} mt-5`}>
+
+                {/*Like Button   isLikedOptimistic === liked[id]*/}
                 {
                     token && <button 
                                 className="group transition-all duration-300 hover:scale-110 cursor-pointer"
@@ -96,9 +110,9 @@ const Characters = ({data, handleClick, token, setLikeAPI, liked}) => {
                             >
                         <svg 
                             className={`w-6 h-6 transition-all duration-300 ${
-                                (liked[id]) ? 'text-red-500 scale-110' : 'text-gray-400 hover:text-red-500'
+                                (isLikedOptimistic ) ? 'text-red-500 scale-110' : 'text-gray-400 hover:text-red-500'
                             }`} 
-                            fill={(liked[id]) ? 'currentColor' : 'none'} 
+                            fill={(isLikedOptimistic) ? 'currentColor' : 'none'} 
                             stroke="currentColor" 
                             strokeWidth={2}
                             viewBox="0 0 24 24"
@@ -108,7 +122,8 @@ const Characters = ({data, handleClick, token, setLikeAPI, liked}) => {
                     </button>
                 }
 
-                 <ReadMoreButton handleClick={handleClick} char={true}/>
+                {/*Read more button */}
+                <ReadMoreButton handleClick={handleClick} char={true}/>
             </div>
         </>
     )
