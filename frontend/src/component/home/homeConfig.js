@@ -22,7 +22,7 @@ import Organizations from "./cards/components/cards/Organizations";
 import Titans from "./cards/components/cards/Titans";
 import TitanComponent from "./cards/components/cards/titans/TitanComponent";
 
-import Likes from "./cards/components/cards/likes/Likes";   /////
+import Likes from "./cards/components/cards/likes/Likes";  
 import RenderLike from "./cards/components/cards/likes/RenderLike"
 import { getLikes, addLike, deleteLike } from "./cards/components/utils/handleLikes";
 import Form from "./cards/components/cards/likes/Form";
