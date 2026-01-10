@@ -45,7 +45,7 @@ const Hero = ({showAlert}) => {
     const isMobile  = useIsMobile()
     
     return (
-        <main className="relative mb-20 md:mb-40 min-h-[500px] md:h-auto" style={{ cursor: "url('./src/assets/images/cursor/Armin__cursor.png'), auto" }} onClick={() => closeVisible()}>
+        <main className="relative mb-20 md:mb-40 min-h-[500px] md:h-auto" style={{ cursor: "url('/assets/images/cursor/armin_cursor.png'), auto" }} onClick={() => closeVisible()}>
 
             {/* section for user to change the season of the bg image*/}
             <MoreButton currentSeason={currentSeason} handleDisplay={handleDisplay} showAlert={showAlert} toggleVisible={toggleVisible} visible={visible}/>
