@@ -43,7 +43,7 @@ const Audio = ({data}) => {
             {/* Hidden Audio Element */}
             <audio 
                 ref={audioRef} 
-                src={`./src/assets/audio/GetStarted/${data.audio[currentTrackIndex]}`} 
+                src={`/assets/audio/GetStarted/${data.audio[currentTrackIndex]}`} 
                     
             />
         </>
