@@ -143,15 +143,12 @@ const GetStarted = ({setCurrentPage}) => {
 		};
 	}, [slice]);
 
-/*
-bg-black/70  border border-white/25 
-				
-*/
+
 	const characterImages = data[activeIndex]["img"]
-	//onTouchStart , onTouchMove, onTouchEnd   onMouseDown, onMouseMove, onMouseUp
+
 	return (
 		<div
-			className={`relative inset-0 bg-[url(./src/assets/images/wallpapers/GetStarted.jpg)] 
+			className={`overflow-x-hidden relative inset-0 bg-[url(./src/assets/images/wallpapers/GetStarted.jpg)] 
 				min-h-screen bg-no-repeat bg-center bg-cover  flex items-center justify-center w-full  ${slice ? 'overflow-hidden fixed inset-0 select-none' : 'overflow-y-scroll'}
 			`}
 			style={{
@@ -182,7 +179,7 @@ bg-black/70  border border-white/25
 			{/*Content */}
 			<motion.div
 				className={`
-					mx-auto  max-w-6xl rounded-3xl  
+					mx-auto  max-w-6xl 
 					w-full  p-5  text-white  
 					relative `}
 				initial={{ scale: 0.8, y: 50 }}
@@ -194,7 +191,7 @@ bg-black/70  border border-white/25
 				<div className="flex flex-col md:flex-row items-center justify-between flex-1 gap-10 relative">
 					
 					{/* 2. Hero Image Section (Animated) */}
-					<div className="relative w-full md:flex-1 flex shrink-0 justify-center items-center min-h-[35vh] md:h-[60vh]">
+					<div className="relative w-full md:flex-1 flex justify-center items-center min-h-[500px] md:h-[60vh]">
 						<div 
 							className={`pointer-events-auto cursor-pointer z-100 active:bg-red-500/50 hover:bg-red-400/50 w-13 h-13 absolute top-0 right-0 rounded-full flex items-center justify-center ${slice?"bg-red-800" : " "}`} 
 							onClick={(e) => {
@@ -211,7 +208,7 @@ bg-black/70  border border-white/25
 							<motion.img
 								key={imageIndex}
 								src={`./src/assets/images/Eren/${characterImages[imageIndex]}`}
-								className="max-h-full w-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)]"
+								className="h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.9)]"
 								initial={{ opacity: 0, scale: 0.9 }}
 								animate={{ opacity: 1, scale: 1 }}
 								exit={{ opacity: 0, scale: 1.1 }}

@@ -71,7 +71,7 @@ const data = [
             "Eren_13.png",
         ],
         "quote": "Eren, thank you for wrapping this scarf around me.",
-        "audio": []
+        "audio": ["itterashai_eren.mp3"]
     }
 ]
 

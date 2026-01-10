@@ -34,7 +34,7 @@ const RandomQuote = () => {
 
     //<Quote data={data}/>
     return (
-        <div className="absolute -bottom-5">
+        <div className="absolute -bottom-16">
             <div className="relative z-10 py-9 px-8 w-full max-w-7xl mx-auto">
                 {isLoading? 
                     (<p>Loading ...</p>

@@ -91,7 +91,7 @@ const Characters = ({data, handleClick, token, setLikeAPI, liked}) => {
             <div className={`${token && "flex items-center justify-between pl-2"} mt-5`}>
                 {
                     token && <button 
-                                className="group transition-all duration-300 hover:scale-110"
+                                className="group transition-all duration-300 hover:scale-110 cursor-pointer"
                                 onClick={handleClickLike}
                             >
                         <svg 

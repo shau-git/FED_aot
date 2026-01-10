@@ -19,7 +19,7 @@ const Audio = ({data}) => {
             <div className="w-full mb-8 ">
                 <p className="text-[10px] uppercase tracking-[0.3em] text-amber-600 font-sans font-bold mb-4">Select audio</p>
                 <div className="grid grid-cols-1 gap-2 w-full max-w-sm">
-                    {data.audio.map((track, idx) => (
+                    {data.audio.map((_, idx) => (
                         <button
                             key={idx}
                             onClick={() => {selectTrack(idx);}}
