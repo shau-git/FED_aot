@@ -69,7 +69,7 @@ const SongModal = ({closeSongModal, openSongModal, isPlaying, setIsPlaying, curr
     return (
         <motion.div
             className={`${openSongModal?"z-100": "-z-100"} fixed inset-0 bg-[url(/assets/images/wallpapers/Song.jpg)]  md:overflow-x-hidden
-            min-h-screen bg-no-repeat bg-center bg-cover overflow-hidden flex items-center justify-center w-full
+             ${isMobile?"min-h-[100svh] p-1": "min-h-screen"} bg-no-repeat bg-center bg-cover overflow-hidden flex items-center justify-center w-full
             `}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
