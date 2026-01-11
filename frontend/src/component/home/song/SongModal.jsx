@@ -80,7 +80,7 @@ const SongModal = ({closeSongModal, openSongModal, isPlaying, setIsPlaying, curr
                 className={`
                     bg-black/70  border 
                     border-white/25  mx-auto  max-w-6xl rounded-3xl  
-                    w-full ${isMobile?"h-screen p-1": "max-h-[90vh] p-10"}  text-white  
+                    w-full ${isMobile?"h-[100svh] p-1": "max-h-[90vh] p-10"}  text-white  
                     relative flex justify-center items-center `}
                 initial={{ scale: 0.8, y: 50 }}
                 animate={{ scale: 1, y: 0 }}
