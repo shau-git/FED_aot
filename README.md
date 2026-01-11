@@ -19,7 +19,7 @@ You can view my design prototype in this `Figma` [link](https://www.figma.com/de
 
 ## Features
 In this section will dive dip in all the details of each sections in this app.
-__Note__: when first load the page the audio and images will took some time to load, need to be patient.
+__Note__: when first load the page the audio and images will take some time to load, need to be patient.
 
 ### Get Started
 This is the first section you'll see when visiting the app.
