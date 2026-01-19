@@ -19,7 +19,7 @@ You can view my design prototype in this `Figma` [link](https://www.figma.com/de
 
 ## Features
 In this section will dive dip in all the details of each sections in this app.
-__Note__: when first load the page the audio and images will took some time to load, need to be patient.
+__Note__: when first load the page the audio and images will take some time to load, need to be patient.
 
 ### Get Started
 This is the first section you'll see when visiting the app.
@@ -80,6 +80,9 @@ This section contains the app's core information. Note: Some images aren't provi
 If you notice a character __like button__ that __isn't working__, it's likely because the server takes some time to start up. Simply __log out__ and __log back in__, and the issue should be resolved.
 
 ## Credits
+Disclaimer:
+1. All assets (images & audio) are the property of their respective owners( Hajime Isayama/ MAPPA / Wit Studio / Pony Canyon).
+2. This is a non-commercial student project intended to demostrate web development skills under Fair Use guildlines. No copyright infringement is intended.
 
 ### Content
 - The Sysnosis for each epsiodes were copied from [attackontitan.fandom](https://attackontitan.fandom.com/wiki/List_of_Attack_on_Titan_episodes).
@@ -90,7 +93,7 @@ If you notice a character __like button__ that __isn't working__, it's likely be
 - All of the photos used in this project were obtained from [Pinterest](https://www.pinterest.com/).
 - The cursor images were downloaded from [sweezy-cursor](https://sweezy-cursors.com/)
 - All audio for Eren's speech in the get started page were downloaded from [zedge](https://www.zedge.net/).
-- All Songs were downloaded from [skysound7](https://skysound7.com/).
+- All Songs were downloaded from [skysound7](https://skysound7.com/)
     
 ### Acknowledgements
 - I received inspiration for this project from Hajime Isayama’s [Attack on Titan](https://en.wikipedia.org/wiki/Attack_on_Titan_(TV_series))
