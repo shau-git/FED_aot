@@ -112,7 +112,7 @@ const LocationAdd = () => {
                 <DisplayImage p={{
                     imageIndex,
                     direction,
-                    imageUrl: "./src/assets/images/locations/",
+                    imageUrl: "/assets/images/locations/",
                     imageName: locationImg[imageIndex],
                     bgPosition: "center",
                     handleAction: setOpen
