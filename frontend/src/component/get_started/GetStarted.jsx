@@ -154,7 +154,7 @@ const GetStarted = ({setCurrentPage}) => {
 			style={{
 				cursor: isCursorActive
 				? `url('/assets/images/cursor/sword_cursor.png'), crosshair`
-				: "url('/assets/images/cursor/eren__cursor.png') , auto"
+				: "url('/assets/images/cursor/eren_cursor.png') , auto"
 			}}
 			ref={containerRef }
 			onTouchStart={handlePointerDown}
